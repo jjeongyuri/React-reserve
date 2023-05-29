@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import AddAll from "./component/AddAll";
+import Search from "./component/Search";
+import {BiCalendarHeart} from 'react-icons/bi';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <article>
+        <div className="reservation">
+          <h1>
+          <BiCalendarHeart/>
+          항공권 예매    
+          </h1>
+        </div>
+        <div className="search">
+          <Search/>
+        </div>
+        <div className="infomation">
+          <AddAll/>
+        </div>
+      </article>
   );
 }
 

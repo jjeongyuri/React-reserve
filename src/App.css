@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgb(185, 185, 229);
+    font-size: 16px;
+}
+article{
+    width: 1000px;
+    margin: 50px auto 0;
+    background-color: #fff;
+    padding: 20px;
+}
+/* 윗부분 */
+.reservation{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+}
+.reservation>h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* search */
+.search{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.search>input{
+    width: 94%;
+    font-size: 18px;
+    padding: 3px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* infomation */
+.infomation{
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* system */
+.system{
+    width: 450px;
+    border: 2px solid #666;
+}
+.system>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #352733;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+}
+.system>.systemName{
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.system>.systemName>li{
+    margin-right: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+/* reserve=>ul */
+.reserve{
+    padding: 5px;
+}
+.reserve>li{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* 공통 부분 */
+.reserve>li>input{
+    display: inline-block;
+    width: 95%;
+    font-size: 18px;
+    padding: 3px;
+}
+.reserve>li>span{}
+.reserve>li>label{
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: flex;
+    font-weight: bold;
+}
+/*  */
+
+.reserve>li:first-child{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.reserve>li:first-child>input{
+    width: 42%;
+}
+.reserve>li:first-child>span{
+    display: inline-block;
+    font-size: 18px;
+}
+.reserve>li:nth-child(4){
+    margin-bottom: 25px;
+}
+/* li=>5번째 다름 */
+.reserve>li:nth-child(5){
+    width: 97%;
+}
+.reserve>li:nth-child(5)>dl{
+
+}
+.reserve>li:nth-child(5)>dl>dt{
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.reserve>li:nth-child(5)>dl>dd{
+    margin-bottom: 10px;
+}
+.reserve>li:nth-child(5)>dl>dd>label{
+    font-size: 13px;
+    font-weight: lighter;
+    margin-right: 5px;
+}
+.reserve>li:nth-child(5)>dl>dd>input{
+    width: 20%;
+    font-size: 13px;
+    padding: 3px;
+}
+/*  */
+/* li=>6번째 다름 */
+.reserve>li:nth-child(6){
+}
+.reserve>li:nth-child(6)>span{
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+}
+.reserve>li:nth-child(6)>button{
+    width: 30%;
+    height: 35px;
+    margin-right: 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+/*  */
+.reserve>button{
+    width: 97%;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #352733;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* list */
+.list{
+    width: 520px;
+    border: 2px solid #666;
+}
+.list>div{
+   position: relative;
+}
+.list>div>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #352733;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+}
+.list>div>button{
+    position: absolute;
+    right: 0; top: 0;
+    width: 30%;
+    height: 35px;
+    background-color: #352733;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+}
+.list>div>ul{
+    position: absolute;
+    right: 0; top: 35px;
+    background-color: #352733;
+    width: 30%;
+    text-align: center;
+    display: none;
+}
+.list>div>ul>li{
+    padding:  10px 6px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.list>ul{
+    padding: 5px;
+}
+.list>ul>li{
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+.list>ul>li>dl{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.list>ul>li>dl>dt{
+    font-size: 14px;
+    display: flex;
+}
+.list>ul>li>dl>dt:first-child{
+    position: absolute;
+    left: 0; top: 0;
+}
+.list>ul>li>dl>dd:nth-child(2){
+    position: absolute;
+    left: 12%; top: 0;
+}
+.list>ul>li>dl>dd:nth-child(3){
+    position: absolute;
+    right: 0; top: 0;
+}
+.list>ul>li>dl>dd{
+    font-size: 20px;
+}
+.list>ul>li>dl>dd>span{}
+.list>ul>li>dl>dd:last-child>button{
+    width: 60px;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
 }
