@@ -36,7 +36,7 @@ function AddList({toggle,sortBy,onChangeSort}){
     )
 }
 
-export default function AddAll({list,setList,sortBy,onChangeSort,dataChange}){
+export default function AddAll({list,setList,sortBy,onChangeSort,dataChange,onChangeWrite}){
     // console.log(dataChange)
     const [toggle,setToggle] = useState(false);
 
@@ -52,7 +52,7 @@ export default function AddAll({list,setList,sortBy,onChangeSort,dataChange}){
                     <button type="button">편도</button>
                 </li>
             </ul>
-            <AddReservation/>
+            <AddReservation onChangeWrite={onChangeWrite}/>
          </div>
          <div className="list">
             <div>

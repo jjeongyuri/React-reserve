@@ -53,6 +53,7 @@ function App() {
                   sortBy={sortBy}
                   onChangeSort={(mySort)=>setSortBy(mySort)}
                   dataChange={allData}
+                  onChangeWrite={(myWrite)=>setList([...list,myWrite])}
                   />
         </div>
       </article>
