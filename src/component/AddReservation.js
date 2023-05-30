@@ -1,14 +1,13 @@
-import {BiRightArrow} from 'react-icons/bi';
+import {BiRefresh} from 'react-icons/bi';
 
-export default function AddReservation(){
+function AddSelect(){
     return(
         <>
-         <ul className="reserve">
-            {/* 1. */}
+        {/* 1. */}
             <li>
                 <input type="text" placeholder="출발지"/>
                 <span>
-                    <BiRightArrow/>
+                    <BiRefresh/>
                 </span>
                 <input type="text" placeholder="도착지"/>
             </li>
@@ -57,7 +56,29 @@ export default function AddReservation(){
                 <button type="button">비지니스</button>
                 <button type="button">퍼스트</button>
             </li>
-            <button>
+        </>
+    )
+}
+
+export default function AddReservation(){
+    // reset객체
+    const resetData = {
+        passengerName:"",
+        seat:"",
+        boardingTime:"",
+        From:"",
+        CountryFrom:"",
+        To:"",
+        CountryTo:"",
+        boardingDate:""
+      }
+
+    return(
+        <>
+         <ul className="reserve">
+            <AddSelect/>
+
+            <button type='button'>
                 예매하기
             </button>
          </ul>
