@@ -95,8 +95,10 @@ article{
     justify-content: space-between;
     margin-bottom: 25px;
 }
-.reserve>li:first-child>input{
+.reserve>li:first-child>select{
     width: 42%;
+    font-size: 18px;
+    padding: 3px;
 }
 .reserve>li:first-child>span{
     display: inline-block;
@@ -132,6 +134,7 @@ article{
     width: 15%;
     font-size: 13px;
     padding: 3px;
+    text-align: center;
 }
 .reserve>li:nth-child(5)>dl>dd>button{
    margin-right: 5px;

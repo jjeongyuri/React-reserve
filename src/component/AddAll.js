@@ -44,15 +44,8 @@ export default function AddAll({list,setList,sortBy,onChangeSort,dataChange,onCh
         <>
          <div className="system">
             <h2>예약시스템</h2>
-            <ul className="systemName">
-                <li>
-                    <button type="button">왕복</button>
-                </li>
-                <li>
-                    <button type="button">편도</button>
-                </li>
-            </ul>
-            <AddReservation onChangeWrite={onChangeWrite}/>
+            <AddReservation onChangeWrite={onChangeWrite}
+                            dataChange={dataChange}/>
          </div>
          <div className="list">
             <div>
