@@ -43,7 +43,7 @@ console.log(e)
                 {/* <input type="text" 
                        placeholder="출발지"
                        onChange={(e)=>{setFormData({...formData,From:e.target.value,CountryFrom:e.target.value})}}/> */}
-                <select onChange={start}>
+                <select onClick={(e)=>setFormData({...formData,From:e.target.value,CountryFrom:e.target.value})}>
                     <option >출발지</option>
                     <option >인천ICN</option>
                     <option >대구TAE</option>
