@@ -108,7 +108,7 @@ article{
     margin-bottom: 25px;
 }
 /* li=>5번째 다름 */
-.reserve>li:nth-child(5){
+/* .reserve>li:nth-child(5){
     width: 97%;
 }
 .reserve>li:nth-child(5)>dl{
@@ -146,25 +146,30 @@ article{
 }
 .reserve>li:nth-child(5)>dl>dd>button:nth-child(4){
    margin-left: 5px;
-}
+} */
 /*  */
 /* li=>6번째 다름 */
-.reserve>li:nth-child(6){
+.reserve>li:nth-child(5){
 }
-.reserve>li:nth-child(6)>span{
+.reserve>li:nth-child(5)>span{
     font-size: 18px;
     margin-bottom: 8px;
     font-weight: bold;
     display: inline-block;
     width: 100%;
 }
-.reserve>li:nth-child(6)>button{
+.reserve>li:nth-child(5)>button{
     width: 30%;
     height: 35px;
     margin-right: 14px;
     font-size: 14px;
     border-radius: 5px;
     border: 1px solid #333;
+    cursor: pointer;
+}
+.reserve>li:nth-child(5)>button:active{
+    background-color: #352733;
+    color: #fff;
 }
 /*  */
 .reserve>button{
@@ -177,6 +182,7 @@ article{
     padding: 8px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 

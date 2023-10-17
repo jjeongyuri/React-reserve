@@ -6,7 +6,7 @@ function AddSelect({formData,setFormData}){
 
     // switch문함수
     function start(e){
-console.log(e)
+// console.log(e)
         // console.log(formData.From)
         // const fromBy = formData.From;
         // console.log(fromBy)
@@ -26,7 +26,7 @@ console.log(e)
         // }
         // setFormData({...formData,From:e.target.value,CountryFrom:e.target.value})
     }
-    console.log(start)
+    // console.log(start)
     // function seatStop(){
     //    if(setSeatBy === 0){
     //     return 0;
@@ -94,7 +94,7 @@ console.log(e)
             </li>
 
             {/* 5. */}
-            <li>
+            {/* <li>
                 <dl>
                     <dt>탑승인원 선택</dt>
                     <dd>
@@ -123,16 +123,16 @@ console.log(e)
                      <button type='button'>+</button>
                     </dd>
                 </dl> 
-            </li>
+            </li> */}
 
             {/* 6. */}
             <li>
                 <span>좌석등급 선택</span>
-                <button type="button"
-                        onClick={(e)=>{setFormData(e.target.value)}}>이코노미</button>
-                <button type="button"
+                <button type="button" value="이코노미"
+                        onClick={(e)=>{setFormData({...formData,seat:e.target.value})}}>이코노미</button>
+                <button type="button" value="비지니스"
                         onClick={(e)=>{setFormData({...formData,seat:e.target.value})}}>비지니스</button>
-                <button type="button"
+                <button type="button" value="퍼스트"
                         onClick={(e)=>{setFormData({...formData,seat:e.target.value})}}>퍼스트</button>
             </li>
         </>
@@ -167,6 +167,7 @@ export default function AddReservation({onChangeWrite}){
             To:formData.To,
             CountryTo:formData.CountryTo,
             boardingDate:formData.boardingDate 
+            
         }
 
         // 데이터 보내기
